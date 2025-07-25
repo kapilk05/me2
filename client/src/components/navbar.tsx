@@ -83,7 +83,7 @@ export function Navbar() {
             <div className="flex items-center space-x-4">
               <Button
                 onClick={() => scrollToSection("book-session")}
-                className="bg-accent-cyan text-black hover:bg-cyan-400 font-medium"
+                className="bg-accent-cyan text-black hover:bg-cyan-400 font-medium dark:text-black"
               >
                 Book a Session
               </Button>

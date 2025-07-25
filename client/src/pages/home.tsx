@@ -12,10 +12,12 @@ import { PositionsSection } from "@/components/positions-section";
 import { BookingSection } from "@/components/booking-section";
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
+import { ThreeBackground } from "@/components/three-background";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
+      <ThreeBackground />
       <LoadingScreen />
       <ProgressBar />
       <Navbar />

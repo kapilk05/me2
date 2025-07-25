@@ -36,7 +36,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-4xl md:text-6xl font-bold mb-6"
         >
-          Hey there! I'm <span className="text-accent-cyan">Kapil</span> 👋
+          Hey there! I'm <span className="text-accent-cyan">Kapil</span>
         </motion.h1>
         
         <motion.p
@@ -74,14 +74,14 @@ export function HeroSection() {
         >
           <Button
             onClick={() => scrollToSection("book-session")}
-            className="bg-accent-cyan text-black hover:bg-cyan-400 px-8 py-3 font-medium"
+            className="bg-accent-cyan text-black hover:bg-cyan-400 px-8 py-3 font-medium dark:text-black"
           >
             Book a Session
           </Button>
           <Button
             onClick={() => scrollToSection("contact")}
             variant="outline"
-            className="border-accent-cyan text-accent-cyan hover:bg-accent-cyan hover:text-black px-8 py-3 font-medium"
+            className="border-accent-cyan text-accent-cyan hover:bg-accent-cyan hover:text-black px-8 py-3 font-medium dark:text-black dark:hover:text-black"
           >
             Get in Touch
           </Button>

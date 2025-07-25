@@ -113,30 +113,12 @@ export function ProjectsSection() {
                       {project.demoLink ? (
                         <Button 
                           size="sm" 
-                          className="bg-accent-cyan text-black hover:bg-accent-cyan/80 text-xs"
+                          className="bg-accent-cyan text-black hover:bg-accent-cyan/80 text-xs dark:text-black"
                           onClick={() => window.open(project.demoLink!, '_blank')}
                         >
                           {project.buttonText}
                         </Button>
-                      ) : (
-                        <Button size="sm" disabled className="bg-gray-400 text-gray-600 text-xs cursor-not-allowed">
-                          {project.buttonText}
-                        </Button>
-                      )}
-                      {project.githubLink ? (
-                        <Button 
-                          size="sm" 
-                          variant="outline" 
-                          className="border-accent-cyan text-accent-cyan hover:bg-accent-cyan hover:text-black text-xs"
-                          onClick={() => window.open(project.githubLink!, '_blank')}
-                        >
-                          GitHub
-                        </Button>
-                      ) : (
-                        <Button size="sm" disabled variant="outline" className="border-gray-400 text-gray-400 text-xs cursor-not-allowed">
-                          GitHub
-                        </Button>
-                      )}
+                      ) : null}
                     </div>
                   </div>
                 </CardContent>
