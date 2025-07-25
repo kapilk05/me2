@@ -1,63 +1,30 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 
-// Company logos based on provided images
+import skimaLogo from "@assets/skima 1_1753465150214.jpg";
+import djsceLogo from "@assets/djsce_1753465150215.jpg";
+import parkitLogo from "@assets/Screenshot 2025-07-25 230734_1753465135736.png";
+
+// Company logos using actual images
 const CompanyLogos = {
   SkimaAI: () => (
-    <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center p-2">
-      <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        {/* Skima AI geometric S logo */}
-        <path d="M12 12L24 6L36 12L30 18L24 12L18 18L12 12Z" fill="url(#skima1)"/>
-        <path d="M18 18L24 24L30 18L36 24L24 36L12 24L18 18Z" fill="url(#skima2)"/>
-        <defs>
-          <linearGradient id="skima1" x1="0" y1="0" x2="48" y2="24">
-            <stop stopColor="#FF6B35"/>
-            <stop offset="1" stopColor="#F7931E"/>
-          </linearGradient>
-          <linearGradient id="skima2" x1="0" y1="24" x2="48" y2="48">
-            <stop stopColor="#9B59B6"/>
-            <stop offset="1" stopColor="#8E44AD"/>
-          </linearGradient>
-        </defs>
-      </svg>
+    <div className="w-12 h-12 rounded-full overflow-hidden bg-white flex items-center justify-center">
+      <img src={skimaLogo} alt="Skima AI" className="w-full h-full object-contain p-1" />
     </div>
   ),
   DJSCE: () => (
-    <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center p-1">
-      <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        {/* DJSCE college emblem style */}
-        <circle cx="24" cy="20" r="12" fill="#1E40AF"/>
-        <path d="M24 32L12 40H36L24 32Z" fill="#1E40AF"/>
-        <rect x="18" y="40" width="12" height="6" fill="#F59E0B"/>
-        <circle cx="24" cy="20" r="6" fill="white"/>
-        <path d="M18 46L24 40L30 46" stroke="#1E40AF" strokeWidth="2" fill="none"/>
-      </svg>
+    <div className="w-12 h-12 rounded-full overflow-hidden bg-white flex items-center justify-center">
+      <img src={djsceLogo} alt="DJSCE" className="w-full h-full object-contain p-1" />
     </div>
   ),
   SuvidhaFoundation: () => (
-    <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center p-2">
-      <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        {/* Foundation/helping hands symbol */}
-        <path d="M12 20C12 16 15 14 18 16L24 20L30 16C33 14 36 16 36 20V28C36 32 33 34 30 32L24 28L18 32C15 34 12 32 12 28V20Z" fill="url(#suvidha)"/>
-        <circle cx="24" cy="24" r="4" fill="white"/>
-        <defs>
-          <linearGradient id="suvidha" x1="0" y1="0" x2="48" y2="48">
-            <stop stopColor="#10B981"/>
-            <stop offset="1" stopColor="#059669"/>
-          </linearGradient>
-        </defs>
-      </svg>
+    <div className="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center">
+      <span className="text-white font-bold text-sm">SF</span>
     </div>
   ),
   ParkItBiz: () => (
-    <div className="w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center p-2">
-      <svg width="32" height="24" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        {/* Park It logo - diamond shapes like in the image */}
-        <path d="M4 12L12 4L20 12L12 20L4 12Z" fill="#8E44AD"/>
-        <path d="M20 12L28 4L36 12L28 20L20 12Z" fill="#F39C12"/>
-        <path d="M12 20L20 28L28 20L20 12L12 20Z" fill="#E74C3C"/>
-        <text x="24" y="32" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">park it</text>
-      </svg>
+    <div className="w-12 h-12 rounded-full overflow-hidden bg-white flex items-center justify-center">
+      <img src={parkitLogo} alt="Park It" className="w-10 h-6 object-contain" />
     </div>
   ),
 };
@@ -146,11 +113,16 @@ export function ExperienceSection() {
                     </div>
                     <p className="text-muted-foreground mb-4">{exp.description}</p>
                     {exp.details && (
-                      <ul className="text-muted-foreground space-y-2">
+                      <div className="space-y-2">
                         {exp.details.map((detail, idx) => (
-                          <li key={idx}>• {detail}</li>
+                          <div key={idx} className="flex items-start gap-2">
+                            <span className="text-accent-cyan mt-1.5 text-xs">•</span>
+                            <p className="text-sm text-muted-foreground flex-1">
+                              {detail}
+                            </p>
+                          </div>
                         ))}
-                      </ul>
+                      </div>
                     )}
                   </CardContent>
                 </Card>

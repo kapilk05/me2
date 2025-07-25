@@ -30,7 +30,7 @@
   --dark-accent: hsl(0, 0%, 25.1%);
   --light-primary: hsl(0, 0%, 96.1%);
   --light-secondary: hsl(0, 0%, 100%);
-  --accent-cyan: hsl(175, 70%, 60%);
+  --accent-cyan: hsl(0, 0%, 0%);
 }
 
 .dark {
@@ -53,6 +53,7 @@
   --border: hsl(0, 0%, 14.9%);
   --input: hsl(0, 0%, 14.9%);
   --ring: hsl(0, 0%, 83.1%);
+  --accent-cyan: hsl(175, 70%, 60%);
 }
 
 @layer base {
@@ -87,6 +88,15 @@
     @apply absolute left-6 w-4 h-4 rounded-full border-4;
     border-color: var(--dark-primary);
     background-color: var(--accent-cyan);
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
 }
 
