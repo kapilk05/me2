@@ -4,51 +4,51 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const achievements = [
   {
-    title: "International Rank 3",
-    description: "Informatics Olympiad",
+    title: "Subject Topper",
+    description: "Business Analytics securing 85/100 marks and an A Grade",
     icon: Trophy,
     color: "text-yellow-500",
   },
   {
-    title: "Team Leadership",
-    description: "Managed teams of 60+ members across multiple organizations",
-    icon: Users,
+    title: "Global Rank 20",
+    description: "Codechef Starters 135 (Div 3) - Peak Rating 1790",
+    icon: Code,
     color: "text-accent-cyan",
   },
   {
-    title: "Budget Management",
-    description: "Successfully managed ₹13 lakhs in funds as Head of Finance",
-    icon: DollarSign,
+    title: "B-Plan Winner",
+    description: "DJSCE TRINITY Business Plan Competition",
+    icon: Award,
     color: "text-green-500",
   },
   {
-    title: "Research Publication",
-    description: "Published paper on liver fibrosis detection with 92.5% accuracy",
-    icon: FileText,
-    color: "text-blue-500",
-  },
-  {
-    title: "IIT Madras Certification",
-    description: "Foundations of Data Science from Indian Institute of Technology",
-    icon: Award,
+    title: "Creative Arts",
+    description: "Stage Play Writer 3rd place & Rap Battle 2nd place",
+    icon: BookOpen,
     color: "text-purple-500",
   },
   {
-    title: "Teaching Excellence",
-    description: "Recognized TA for Data Structures and Programming courses",
-    icon: BookOpen,
+    title: "International Rank 3",
+    description: "Informatics Olympiad",
+    icon: Trophy,
+    color: "text-blue-500",
+  },
+  {
+    title: "State Rank 1",
+    description: "Informatics Olympiad State Level",
+    icon: Award,
     color: "text-orange-500",
   },
   {
-    title: "Hackathon Winner",
-    description: "Multiple first place finishes in ML and tech competitions",
-    icon: Code,
+    title: "State Rank 2",
+    description: "Mathematics Olympiad",
+    icon: Trophy,
     color: "text-cyan-500",
   },
   {
-    title: "Open Source Impact",
-    description: "Active contributor to machine learning projects on GitHub",
-    icon: Users,
+    title: "Multi-Olympiad Winner",
+    description: "State Rank 3 in Reasoning & French Olympiads",
+    icon: Award,
     color: "text-green-400",
   },
 ];
@@ -86,6 +86,11 @@ export function AchievementsSection() {
                 </Card>
               </motion.div>
             ))}
+          </div>
+          <div className="flex justify-center mt-4">
+            <p className="text-sm text-muted-foreground flex items-center gap-2">
+              <span>← Scroll to see more achievements →</span>
+            </p>
           </div>
         </div>
       </div>

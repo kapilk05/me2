@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import kapilPhoto from "@assets/Kapil photo_1753467707775.jpg";
 
 export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -20,8 +20,12 @@ export function HeroSection() {
           className="mb-8"
         >
           <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-accent-cyan to-blue-500 p-1">
-            <div className="w-full h-full rounded-full bg-background dark:bg-gray-900 flex items-center justify-center">
-              <User className="text-4xl text-accent-cyan" size={64} />
+            <div className="w-full h-full rounded-full overflow-hidden">
+              <img 
+                src={kapilPhoto} 
+                alt="Kapil Kashyap" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </motion.div>
@@ -32,8 +36,17 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-4xl md:text-6xl font-bold mb-6"
         >
-          Hi, I'm <span className="text-accent-cyan">Kapil Kashyap</span>
+          Hey there! I'm <span className="text-accent-cyan">Kapil</span> 👋
         </motion.h1>
+        
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="text-2xl md:text-3xl font-semibold text-accent-cyan mb-4"
+        >
+          Code • Create • Innovate
+        </motion.p>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -41,7 +54,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-xl md:text-2xl text-muted-foreground mb-8"
         >
-          Software Development Engineer | Python | LLM's | GCP | RAG Models | Analysis and Statistics
+          Software Developer & ML Engineer
         </motion.p>
 
         <motion.p

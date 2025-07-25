@@ -11,8 +11,9 @@ const projects = [
     icon: TrendingUp,
     type: "Time Series",
     techStack: ["Python", "Prophet", "ETS", "Power BI", "Pandas"],
-    demoLink: null,
+    demoLink: "https://app.powerbi.com/groups/me/reports/e27067ca-6478-4656-b829-4f1672332c7e?pbi_source=desktop",
     githubLink: null,
+    buttonText: "Demo",
   },
   {
     title: "Weighted Voting Detection for Liver Fibrosis",
@@ -22,6 +23,7 @@ const projects = [
     techStack: ["Python", "XGBoost", "DenseNet-201", "Medical Imaging"],
     demoLink: "https://www.jneonatalsurg.com/index.php/jns/article/view/4685",
     githubLink: null,
+    buttonText: "Paper",
   },
   {
     title: "Automated Feature Extraction From Github Repos",
@@ -29,8 +31,9 @@ const projects = [
     icon: Github,
     type: "Data Mining",
     techStack: ["Python", "GitHub API", "NLP", "Data Analysis"],
-    demoLink: null,
-    githubLink: null,
+    demoLink: "https://github.com/kapilk05/github-feature-extraction",
+    githubLink: "https://github.com/kapilk05/github-feature-extraction",
+    buttonText: "Demo",
   },
   {
     title: "CF Progress Pulse",
@@ -38,8 +41,9 @@ const projects = [
     icon: BarChart3,
     type: "Web Application",
     techStack: ["React", "Node.js", "Codeforces API", "Charts.js"],
-    demoLink: null,
-    githubLink: null,
+    demoLink: "https://github.com/kapilk05/cf-progress-pulse",
+    githubLink: "https://github.com/kapilk05/cf-progress-pulse",
+    buttonText: "Demo",
   },
   {
     title: "Disease Outbreak Prediction",
@@ -47,8 +51,9 @@ const projects = [
     icon: Shield,
     type: "Predictive ML",
     techStack: ["Python", "DistilBERT", "Deep Learning", "Geospatial Analysis"],
-    demoLink: null,
-    githubLink: null,
+    demoLink: "https://github.com/kapilk05/Disease-Outbreak-Prediction",
+    githubLink: "https://github.com/kapilk05/Disease-Outbreak-Prediction",
+    buttonText: "Demo",
   },
   {
     title: "DJSCE E-Cell Website",
@@ -58,6 +63,7 @@ const projects = [
     techStack: ["React.js", "TailwindCSS", "Three.js", "Instagram API"],
     demoLink: "https://djsceecell.com/",
     githubLink: null,
+    buttonText: "Demo",
   },
 ];
 
@@ -110,11 +116,11 @@ export function ProjectsSection() {
                           className="bg-accent-cyan text-black hover:bg-accent-cyan/80 text-xs"
                           onClick={() => window.open(project.demoLink!, '_blank')}
                         >
-                          Demo
+                          {project.buttonText}
                         </Button>
                       ) : (
                         <Button size="sm" disabled className="bg-gray-400 text-gray-600 text-xs cursor-not-allowed">
-                          Demo
+                          {project.buttonText}
                         </Button>
                       )}
                       {project.githubLink ? (

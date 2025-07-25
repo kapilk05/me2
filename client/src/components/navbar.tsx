@@ -25,7 +25,12 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
-              <h1 className="text-xl font-bold text-accent-cyan">Kapil Kashyap</h1>
+              <button 
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                className="text-xl font-bold bg-gradient-to-r from-purple-500 via-accent-cyan to-pink-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-200 cursor-pointer font-mono tracking-wider"
+              >
+                &lt;Kapil.dev/&gt;
+              </button>
             </div>
 
             {/* Desktop Menu */}
@@ -66,6 +71,13 @@ export function Navbar() {
               >
                 Achievements
               </button>
+              <a
+                href="/Profile_1753463227998.pdf"
+                download="Kapil_Kashyap_Resume.pdf"
+                className="hover:text-accent-cyan transition-colors duration-200"
+              >
+                Resume
+              </a>
             </div>
 
             <div className="flex items-center space-x-4">
@@ -144,6 +156,13 @@ export function Navbar() {
               >
                 Achievements
               </button>
+              <a
+                href="/Profile_1753463227998.pdf"
+                download="Kapil_Kashyap_Resume.pdf"
+                className="block w-full text-left py-2 hover:text-accent-cyan transition-colors duration-200"
+              >
+                Resume
+              </a>
             </div>
           </div>
         )}

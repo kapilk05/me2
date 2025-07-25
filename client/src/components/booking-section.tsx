@@ -221,7 +221,7 @@ export function BookingSection() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="bg-accent-cyan text-black hover:bg-cyan-400 px-8 py-3 font-semibold text-lg"
+                  className="bg-accent-cyan text-black hover:bg-cyan-400 px-8 py-3 font-semibold text-lg dark:text-black"
                 >
                   {isSubmitting ? "Booking..." : "Book Your Session"}
                 </Button>

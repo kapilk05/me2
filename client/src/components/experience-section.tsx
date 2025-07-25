@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 
-import skimaLogo from "@assets/skima 1_1753465150214.jpg";
 import djsceLogo from "@assets/djsce_1753465150215.jpg";
-import parkitLogo from "@assets/Screenshot 2025-07-25 230734_1753465135736.png";
+import skimaNewLogo from "@assets/skima_1-removebg-preview_1753467444025.png";
+import parkitNewLogo from "@assets/Screenshot_2025-07-25_230734-removebg-preview (1)_1753467444023.png";
 
 // Company logos using actual images
 const CompanyLogos = {
   SkimaAI: () => (
-    <div className="w-12 h-12 rounded-full overflow-hidden bg-white flex items-center justify-center">
-      <img src={skimaLogo} alt="Skima AI" className="w-full h-full object-contain p-1" />
+    <div className="w-12 h-12 rounded-full overflow-hidden bg-black flex items-center justify-center">
+      <img src={skimaNewLogo} alt="Skima AI" className="w-full h-full object-contain p-1" />
     </div>
   ),
   DJSCE: () => (
@@ -23,8 +23,8 @@ const CompanyLogos = {
     </div>
   ),
   ParkItBiz: () => (
-    <div className="w-12 h-12 rounded-full overflow-hidden bg-white flex items-center justify-center">
-      <img src={parkitLogo} alt="Park It" className="w-10 h-6 object-contain" />
+    <div className="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-br from-pink-500 via-purple-500 to-pink-400 flex items-center justify-center p-1">
+      <img src={parkitNewLogo} alt="Park It" className="w-full h-full object-contain" />
     </div>
   ),
 };
