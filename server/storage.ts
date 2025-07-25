@@ -44,7 +44,8 @@ export class MemStorage implements IStorage {
       amount: "150",
       currency: "INR",
       status: "pending",
-      createdAt: new Date()
+      createdAt: new Date(),
+      message: insertBooking.message ?? null
     };
     this.bookings.set(id, booking);
     return booking;

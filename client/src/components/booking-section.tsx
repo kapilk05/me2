@@ -29,7 +29,7 @@ export function BookingSection() {
     try {
       await apiRequest("POST", "/api/book-session", formData);
       toast({
-        title: "Session Booked Successfully!",
+        title: "Your Session is Booked Successfully!",
         description: "I'll get back to you within 24 hours to confirm the session details.",
       });
       setFormData({
