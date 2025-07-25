@@ -1,43 +1,46 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 
-// Simple SVG icons for companies
+// Company logos based on provided images
 const CompanyLogos = {
   SkimaAI: () => (
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="48" height="48" rx="8" fill="url(#gradient1)"/>
-      <path d="M12 24C12 17.3726 17.3726 12 24 12C30.6274 12 36 17.3726 36 24C36 30.6274 30.6274 36 24 36C17.3726 36 12 30.6274 12 24Z" fill="white" fillOpacity="0.2"/>
-      <path d="M16 20L24 16L32 20V28L24 32L16 28V20Z" fill="white"/>
+      <rect width="48" height="48" rx="8" fill="#000"/>
+      {/* Skima AI geometric S logo */}
+      <path d="M12 12L24 6L36 12L30 18L24 12L18 18L12 12Z" fill="url(#skima1)"/>
+      <path d="M18 18L24 24L30 18L36 24L24 36L12 24L18 18Z" fill="url(#skima2)"/>
       <defs>
-        <linearGradient id="gradient1" x1="0" y1="0" x2="48" y2="48">
-          <stop stopColor="#00FFFF"/>
-          <stop offset="1" stopColor="#0080FF"/>
+        <linearGradient id="skima1" x1="0" y1="0" x2="48" y2="24">
+          <stop stopColor="#FF6B35"/>
+          <stop offset="1" stopColor="#F7931E"/>
+        </linearGradient>
+        <linearGradient id="skima2" x1="0" y1="24" x2="48" y2="48">
+          <stop stopColor="#9B59B6"/>
+          <stop offset="1" stopColor="#8E44AD"/>
         </linearGradient>
       </defs>
     </svg>
   ),
   DJSCE: () => (
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="48" height="48" rx="8" fill="url(#gradient2)"/>
-      <path d="M24 8L34 16V32L24 40L14 32V16L24 8Z" fill="white"/>
-      <path d="M24 14L28 18V30L24 34L20 30V18L24 14Z" fill="url(#gradient2)"/>
-      <rect x="21" y="20" width="6" height="8" fill="white"/>
-      <defs>
-        <linearGradient id="gradient2" x1="0" y1="0" x2="48" y2="48">
-          <stop stopColor="#1E40AF"/>
-          <stop offset="1" stopColor="#3B82F6"/>
-        </linearGradient>
-      </defs>
+      <circle cx="24" cy="24" r="22" fill="white" stroke="#1E40AF" strokeWidth="2"/>
+      {/* DJSCE college emblem style */}
+      <circle cx="24" cy="18" r="8" fill="#1E40AF"/>
+      <path d="M24 26L18 32H30L24 26Z" fill="#1E40AF"/>
+      <rect x="20" y="32" width="8" height="4" fill="#F59E0B"/>
+      <circle cx="24" cy="18" r="4" fill="white"/>
+      <path d="M20 40L24 36L28 40" stroke="#1E40AF" strokeWidth="2" fill="none"/>
+      <text x="24" y="44" textAnchor="middle" fill="#1E40AF" fontSize="6" fontWeight="bold">DJSCE</text>
     </svg>
   ),
   SuvidhaFoundation: () => (
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="48" height="48" rx="8" fill="url(#gradient3)"/>
-      <path d="M24 6L36 18H30V36H18V18H12L24 6Z" fill="white"/>
-      <circle cx="24" cy="24" r="6" fill="url(#gradient3)"/>
-      <circle cx="24" cy="24" r="3" fill="white"/>
+      <rect width="48" height="48" rx="8" fill="url(#suvidha)"/>
+      {/* Foundation/helping hands symbol */}
+      <path d="M12 20C12 16 15 14 18 16L24 20L30 16C33 14 36 16 36 20V28C36 32 33 34 30 32L24 28L18 32C15 34 12 32 12 28V20Z" fill="white"/>
+      <circle cx="24" cy="24" r="4" fill="url(#suvidha)" fillOpacity="0.8"/>
       <defs>
-        <linearGradient id="gradient3" x1="0" y1="0" x2="48" y2="48">
+        <linearGradient id="suvidha" x1="0" y1="0" x2="48" y2="48">
           <stop stopColor="#10B981"/>
           <stop offset="1" stopColor="#059669"/>
         </linearGradient>
@@ -46,16 +49,16 @@ const CompanyLogos = {
   ),
   ParkItBiz: () => (
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="48" height="48" rx="8" fill="url(#gradient4)"/>
-      <path d="M10 32H38V36H10V32Z" fill="white"/>
-      <path d="M12 24H36C37.1 24 38 24.9 38 26V32H10V26C10 24.9 10.9 24 12 24Z" fill="white" fillOpacity="0.7"/>
-      <circle cx="16" cy="20" r="3" fill="white"/>
-      <circle cx="32" cy="20" r="3" fill="white"/>
-      <path d="M14 12H34L36 20H12L14 12Z" fill="white"/>
+      <rect width="48" height="48" rx="8" fill="url(#parkit)"/>
+      {/* Park It logo - diamond shapes like in the image */}
+      <path d="M8 16L16 8L24 16L16 24L8 16Z" fill="#8E44AD"/>
+      <path d="M24 16L32 8L40 16L32 24L24 16Z" fill="#F39C12"/>
+      <path d="M16 24L24 32L32 24L24 16L16 24Z" fill="#E74C3C"/>
+      <text x="24" y="44" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">park it</text>
       <defs>
-        <linearGradient id="gradient4" x1="0" y1="0" x2="48" y2="48">
-          <stop stopColor="#F59E0B"/>
-          <stop offset="1" stopColor="#D97706"/>
+        <linearGradient id="parkit" x1="0" y1="0" x2="48" y2="48">
+          <stop stopColor="#2C3E50"/>
+          <stop offset="1" stopColor="#34495E"/>
         </linearGradient>
       </defs>
     </svg>

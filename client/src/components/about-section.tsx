@@ -21,14 +21,11 @@ export function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <p className="text-lg text-muted-foreground mb-6">
-              I'm a recent Computer Engineering graduate from Dwarkadas J. Sanghvi College of Engineering with a strong foundation in machine learning, data analytics, and software development. Over the last four years, I've combined technical research with leadership in business and student-led initiatives.
+            <p className="text-base text-muted-foreground mb-4">
+              Recent Computer Engineering graduate with strong foundation in machine learning, data analytics, and software development. Over four years, I've combined technical research with leadership in business and student-led initiatives.
             </p>
-            <p className="text-lg text-muted-foreground mb-6">
-              My academic journey includes published research on neural networks and graph-based predictive modeling, alongside impactful projects like disease outbreak forecasting and GitHub metadata analysis. I've served as a Teaching Assistant and held leadership roles across entrepreneurship and technical cells.
-            </p>
-            <p className="text-lg text-muted-foreground">
-              I'm passionate about using data to solve real-world problems, whether through research, development, or strategic insights. My experience spans both the technical and business domains, and I'm now looking to contribute to forward-thinking teams.
+            <p className="text-base text-muted-foreground">
+              My journey includes published research on neural networks, impactful ML projects, and leadership roles across entrepreneurship and technical cells. Passionate about using data to solve real-world problems.
             </p>
           </motion.div>
 
@@ -57,10 +54,7 @@ export function AboutSection() {
                     <Linkedin className="text-accent-cyan w-6 h-6 mr-4" />
                     <span>linkedin.com/in/kapilkashyap05</span>
                   </li>
-                  <li className="flex items-center">
-                    <Globe className="text-accent-cyan w-6 h-6 mr-4" />
-                    <span>kapilkashyap.netlify.app</span>
-                  </li>
+
                 </ul>
               </CardContent>
             </Card>

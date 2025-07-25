@@ -29,7 +29,7 @@ export function Navbar() {
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex space-x-4">
               <button
                 onClick={() => scrollToSection("about")}
                 className="hover:text-accent-cyan transition-colors duration-200"

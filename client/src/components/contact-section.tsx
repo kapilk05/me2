@@ -91,10 +91,7 @@ export function ContactSection() {
                 <Linkedin className="text-accent-cyan text-xl w-8 h-6 mr-4" />
                 <span>linkedin.com/in/kapilkashyap05</span>
               </div>
-              <div className="flex items-center">
-                <Globe className="text-accent-cyan text-xl w-8 h-6 mr-4" />
-                <span>kapilkashyap.netlify.app</span>
-              </div>
+
             </div>
           </motion.div>
 

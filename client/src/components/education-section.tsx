@@ -3,22 +3,17 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const education = [
   {
-    degree: "Honors Degree, Intelligent Computing",
-    institution: "Dwarkadas J. Sanghvi College of Engineering",
-    period: "September 2023 - June 2025",
-  },
-  {
     degree: "Bachelor of Technology - Computer Engineering",
     institution: "Dwarkadas J. Sanghvi College of Engineering",
     period: "December 2021 - May 2025",
   },
   {
-    degree: "Bachelor of Science - Data Science",
-    institution: "Indian Institute of Technology, Madras",
+    degree: "Foundations of Data Science",
+    institution: "IIT Madras",
     period: "May 2022 - May 2023",
   },
   {
-    degree: "HSC, Engineering Science",
+    degree: "HSC Grade 12 PCM",
     institution: "Pace Junior Science College",
     period: "April 2019 - August 2021",
   },

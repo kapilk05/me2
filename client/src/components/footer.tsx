@@ -24,14 +24,7 @@ export function Footer() {
             >
               <Linkedin size={24} />
             </a>
-            <a
-              href="https://kapilkashyap.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-accent-cyan transition-colors duration-200"
-            >
-              <Globe size={24} />
-            </a>
+
           </div>
           <p className="text-muted-foreground text-sm">© 2025 Kapil Kashyap. All rights reserved.</p>
         </div>
