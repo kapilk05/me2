@@ -6,9 +6,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h3 className="text-xl font-semibold text-accent-cyan mb-4">Kapil Kashyap</h3>
-          <p className="text-muted-foreground mb-6">
-            Software Development Engineer | Python | LLM's | GCP | RAG Models
-          </p>
+
           <div className="flex justify-center space-x-6 mb-6">
             <a
               href="mailto:kapilkashyap3105@gmail.com"

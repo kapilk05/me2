@@ -9,7 +9,7 @@
   --card-foreground: hsl(240, 10%, 3.9%);
   --popover: hsl(0, 0%, 100%);
   --popover-foreground: hsl(240, 10%, 3.9%);
-  --primary: hsl(180, 100%, 50%);
+  --primary: hsl(270, 100%, 70%);
   --primary-foreground: hsl(0, 0%, 0%);
   --secondary: hsl(240, 4.8%, 95.9%);
   --secondary-foreground: hsl(240, 5.9%, 10%);
@@ -30,7 +30,7 @@
   --dark-accent: hsl(0, 0%, 25.1%);
   --light-primary: hsl(0, 0%, 96.1%);
   --light-secondary: hsl(0, 0%, 100%);
-  --accent-cyan: hsl(180, 100%, 50%);
+  --accent-cyan: hsl(270, 100%, 70%);
 }
 
 .dark {
@@ -40,7 +40,7 @@
   --card-foreground: hsl(0, 0%, 98%);
   --popover: hsl(0, 0%, 10.2%);
   --popover-foreground: hsl(0, 0%, 98%);
-  --primary: hsl(180, 100%, 50%);
+  --primary: hsl(270, 100%, 70%);
   --primary-foreground: hsl(0, 0%, 0%);
   --secondary: hsl(0, 0%, 14.9%);
   --secondary-foreground: hsl(0, 0%, 98%);

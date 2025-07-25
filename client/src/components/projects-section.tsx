@@ -85,14 +85,7 @@ export function ProjectsSection() {
                     </Badge>
                   </div>
                   <h3 className="text-lg font-semibold mb-3">{project.title}</h3>
-                  <p className="text-muted-foreground text-sm mb-4 flex-1">{project.description}</p>
-                  
                   <div className="space-y-3">
-                    <div className="bg-muted/50 p-3 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-2">Preview:</p>
-                      <p className="text-sm">{project.preview}</p>
-                    </div>
-                    
                     <div className="flex flex-wrap gap-1">
                       {project.techStack.map((tech, techIndex) => (
                         <Badge key={techIndex} variant="secondary" className="text-xs">
